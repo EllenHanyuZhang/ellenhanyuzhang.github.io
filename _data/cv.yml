@@ -1,97 +1,55 @@
-- title: General Information
+- title: About Me
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+    - name: Preferred Name
+      value: Ellen
     - name: Languages
-      value: English, German
+      value: English, Mandarin, Korean (high intermediate), German (intermediate)
+    - name: Technical Skills
+      value: Python, R, SQL, Excel VBA, MATLAB, AMPL
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Eng. in Financial Engineering 
+      institution: Cornell University, College of Engineering, Ithaca, NY
+      year: 2022 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Stochastic Calculus, Derivatives Securities, Quantitative Risk Management, Investment and Portfolio Management, etc.
+        
+    - title: B.S. in Operations Research and Information Engineering
+      institution: Cornell University, College of Engineering, Ithaca, NY
+      year: 2019 - 2022
+      description:
+        - GPA 4.18/4.3
+        - Simulation Modeling Analysis, Probability and Statistics, Machine Learning, Statistical Data Mining, Stochastic Process, Optimization, etc.
+        - title: Honors and awards include
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+            - Dean's List all semesters
+            - 2022 Byron W. Saunders Prize winner
+            - Merrill Presidential Scholar nominees
 
-- title: Experience
+- title: Professional Experiences
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Sales and Trading Summer Analyst
+      institution: Global Markets, Citibank, Shanghai, China
+      year: June - Aug. 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Developed an Excel tool to calculate and visualize the CNY implied yield curve based on market data
+        - Generated trading ideas on USD/CNY forward and swap products and contributed to weekly newsletters on market color
+        - Investigated the impact of U.S.-China interest rate gap reversal on global investor behavior in the onshore China rates market
+        - Presented research on Foreign Exchange hedging with Asian Options to senior management within Citi China Markets
+        
+    - title: Strategic Consulting Intern
+      institution: KPMG Global Strategy Group, Beijing, China
+      year: June - Aug. 2020
       description:
-        - Description 1.
-        - Description 2.
+        - Collaborated with a team of 2 senior consultants to help a pharmaceutical MNC choose the business model for 4 different pre-launch vaccine products in the China market
+        - Built 20-year revenue and OPEX forecasting models for each vaccine product under 3 different GTM models
+        - Communicated with the project manager directly and delivered quantitative results to clients via Excel
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Hobbies and Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Language learning, board games, squash, frisbee, coffee tasting, singing, etc. 

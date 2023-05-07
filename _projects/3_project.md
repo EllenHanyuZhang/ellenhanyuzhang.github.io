@@ -1,81 +1,42 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Regime Switching Time Series Forecast
+description: An Investigation on Markov-Switching Vector Autoregression Model for Interest Rate Prediction
+img: assets/img/4.jpg
+importance: 2
+category: projects
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Recent years have seen unprecedented high volatility in interest rates. After the 2008 financial crisis, interest rates remained at a low level, until the Fed hiked rates in 2016 in response to the expanding economy and expected inflation (Gillespie, 2016). The news was viewed as somewhat bullish at the time, and the interest rate started to go upward ever since then. In March 2020, the Fed slashed rates to zero and launched a massive $700 billion QE program (Quantitative Easing) to provide liquidity to the market amid COVID19 (Liesman, 2020). Interest rates stabilized around zero once again, until surging inflation resulted from the pandemic declared a “war” on the Fed. On May 5th 2023, the Fed raised interest rates for the 10th time since 2022, to a 16- year high. All eyes have been on Fed’s next move; the market is also eager to know when the hike is going to end and how the rates could have been predicted.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In this paper, we aim to forecast the behavior of interest rates by analyzing their trend and the volatility of returns using Markov-Switching Vector Autoregressive model (MS-VAR). We assume there’s a latent variable called “market regime,” and that interest rate series behave differently as regime changes. We implemented two variants, MSMH(2)-AR(0) and MSH(2)- AR(1), to estimate the parameters characterizing the time series under each regime, and to forecast the upcoming regime. Understanding the transition among regimes shed light on the level of increase or decrease in interest rate, and the magnitude of volatility we should expect when making inferences into the future.
 
     ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
+    In this paper, we investigated the MS-VAR family by implementing two of its variants, the 
+    MSMH(2)-AR(0) and the MSH(2)-AR(1) model, to predict 3-month T-bill rate behavior under 
+    binary market regimes. We deployed both a “rate trend model” where the market shifts 
+    between the upward regime and "downward regime", and a “return volatility model” where 
+    the market takes on either a high-volatility regime or low-volatility regime. Both 
+    MSMH(2)-AR(0) and MSH(2)- AR(1) models provide satisfying retrospective forecasts when 
+    tested with historical data, effectively capturing rate behavior. MSMH(2)- AR(0) gives 
+    more granular predictions for the trend-focused model, while MSH(2)-AR(1) provides more
+    meticulous predictions. Both suggest, that the current market regime is upward and likely 
+    to persist in the near future. In addition, MSMH(2)-AR(0) predicts much more persistence 
+    in both regimes, backing up its granular forecast results. In contrast, the MSH2- AR1 
+    model implies more frequent shifts in the market regime and thus more shifts in forecasts. 
+    For the volatility-focused model, both MSMH(2)-AR(0) and MSH(2)-AR(1) yield similar 
+    parameter estimates and nearly identical predictions. The low volatility and high 
+    volatility regimes are expected to persist for 5 days and 2.25 days respectively. Both 
+    models predict that the current market regime is "low volatility" and likely to persist.
     ---
+    
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/4.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+   
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}

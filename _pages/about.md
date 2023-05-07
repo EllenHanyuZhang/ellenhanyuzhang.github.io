@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: hz248 at cornell dot edu 
+subtitle: <u>Contact:</u> hz248 at cornell dot edu 
 
 profile:
   align: right
