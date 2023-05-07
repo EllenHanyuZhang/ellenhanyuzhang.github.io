@@ -1,12 +1,9 @@
 - title: About Me
-  type: map
+  type: list
   contents:
-    - name: Preferred Name
-      value: Ellen
-    - name: Languages
-      value: English, Mandarin, Korean (high intermediate), German (intermediate)
-    - name: Technical Skills
-      value: Python, R, SQL, Excel VBA, MATLAB, AMPL
+    -  "Preferred Name:  Ellen"
+    - "Languages: English, Mandarin, Korean (high intermediate), German (intermediate)"
+    - "Technical Skills : Python, R, SQL, Excel VBA, MATLAB, AMPL"
 
 - title: Education
   type: time_table
