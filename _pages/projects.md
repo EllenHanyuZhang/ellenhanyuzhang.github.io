@@ -2,7 +2,7 @@
 layout: page
 title: collection
 permalink: /projects/
-description: A growing collection of my journeys.
+description: A growing collection of my projects and journeys.
 nav: true
 nav_order: 2
 display_categories: [projects, travels]
